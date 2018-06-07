@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 
 class Topic extends Component {
     handleClick = () => {
-        console.log(this.props)
-        // this.props.toggleTopic(this.props.children);
+        this.props.toggleTopic(this.props.children);
     };
 
     render() {
