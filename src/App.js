@@ -48,6 +48,7 @@ class App extends Component {
                                 autosuggest={false}
                                 iconPosition="left"
                                 className="data-search-container results-container"
+                                defaultSelected="android"
                                 innerClass={{
                                     input: 'search-input',
                                 }}

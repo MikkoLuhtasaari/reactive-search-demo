@@ -49,6 +49,7 @@ const SearchFilters = ({currentTopics, setTopics, visible}) => (
                 componentId="stars"
                 title="Repo Stars"
                 dataField="stars"
+                defaultSelected={{"start": 0, "end":3000}}
                 range={{ start:0, end: 5000}}
                 showHistogram={true}
                 rangeLabels={{
