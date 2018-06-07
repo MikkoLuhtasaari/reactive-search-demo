@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 
 class Topic extends Component {
     handleClick = () => {
-        this.props.toggleTopic(this.props.children);
-    }
+        console.log(this.props)
+        // this.props.toggleTopic(this.props.children);
+    };
+
     render() {
         return (
-            <div className={`topic ${this.props.active ? 'active' : ''}`} onClick={this.handleClick}>
+            <div className={`topic ${this.props.active ? "active" : ""}`} onClick={this.handleClick}>
                 #{this.props.children}
             </div>
         );

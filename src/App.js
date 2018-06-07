@@ -47,14 +47,12 @@ class App extends Component {
                                 placeholder="Search Repos"
                                 autosuggest={false}
                                 iconPosition="left"
-                                // Shows search in URL. Most likely not a preferred way in POC
-                                URLParams
                                 className="data-search-container results-container"
                                 innerClass={{
                                     input: 'search-input',
                                 }}
                             />
-                            <Results currentTopics={this.state.currentTopics} toggleTopic={this.state.toggleTopic}/>
+                            <Results currentTopics={this.state.currentTopics} toggleTopic={this.toggleTopic}/>
                         </div>
                     </div>
                 </ReactiveBase>

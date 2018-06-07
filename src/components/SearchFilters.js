@@ -7,7 +7,7 @@ import {
 } from "@appbaseio/reactivesearch"
 
 const SearchFilters = ({currentTopics, setTopics, visible}) => (
-    <div className={`flex column filters-container ${!visible ? "hideen" : ""}`}>
+    <div className={`flex column filters-container ${visible ? "" : "hidden"}`}>
         <div className="child m10">
             <MultiDropdownList
                 componentId="language"
